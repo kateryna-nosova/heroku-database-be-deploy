@@ -6,6 +6,9 @@ const PORT = process.env.PORT || 5050;
 
 app.use(express.json());
 
+const cors = require("cors");
+app.use(cors());
+
 const warehouseRoutes = require("./routes/warehouseRoute");
 const inventoryRoutes = require("./routes/inventoryRoute");
 
